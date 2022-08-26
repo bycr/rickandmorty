@@ -10,9 +10,8 @@ const unicoPersonaje = async (id, state) => {
     state(peticion.data)
 }
 
-
 export {
     todosPersonajes,
     unicoPersonaje,
-   
+
 }

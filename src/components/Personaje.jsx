@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { unicoPersonaje } from "../funciones/funciones";
 import Card from "react-bootstrap/Card";
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
 
 const Personaje = () => {
   const [personaje, setPersonaje] = useState(null);
@@ -21,7 +21,9 @@ const Personaje = () => {
           <Card.Text>Estado: {personaje.status} </Card.Text>
           <Card.Text>Especie: {personaje.species} </Card.Text>
           <Card.Text>Genero: {personaje.gender} </Card.Text>
-          <Button href="/" variant="outline-dark">Atras</Button>
+          <Button href="/" variant="outline-dark">
+            Atras
+          </Button>
         </Card>
       ) : (
         "no hay personaje"
